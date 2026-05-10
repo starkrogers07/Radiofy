@@ -13,7 +13,13 @@ export async function POST(){
       });
     
       const data = await response.json();
-      return NextResponse.json(data)
+      console.log(data);
+      return NextResponse.json({songs: data.tracks?.map((track: any) => ({
+    id: track.id,
+    name: track.title,
+    artist: track.artist,
+  })),
+});
    
     }
     catch(error){

@@ -8,7 +8,7 @@ export default function Home() {
      try{
       setloading(true);
 
-      const response = await fetch("/api/play", { // This is working like a API gateway 
+      const response = await fetch("/api/play", { // This is working like an API gateway 
         method: "POST",
       });
       

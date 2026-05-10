@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
-import "./globals.css";
-import Navbar from "../components/Navbar";
+import "./globals.css"; // Importing global CSS styles for the application
+import Navbar from "@/components/Navbar";
 
 
 export const metadata: Metadata = { /*SEO metadata refers to snippets of text and HTML code that describe a page's content, allowing search engines to understand and display it properly */
